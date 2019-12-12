@@ -42,3 +42,5 @@ minikube dashboard
 
 cd service-catalog/simple-helloworld
 docker build . -t sosi/abc
+
+kubectl create deployment hello-node2 --image=sosi/abc
