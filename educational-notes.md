@@ -64,3 +64,7 @@ minikube service hello-node2
 > | default   | hello-node2 |             | http://192.168.99.100:31936 |
 > |-----------|-------------|-------------|-----------------------------|
 > 🎉  Opening service default/hello-node2 in default browser...
+
+
+kubectl delete service hello-node
+kubectl delete deployment hello-node
