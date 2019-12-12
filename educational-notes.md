@@ -20,8 +20,8 @@ minikube start --vm-driver=virtualbox
 
 The 'hyperkit' driver requires elevated permissions. The following commands will be executed:
 
-    $ sudo chown root:wheel /Users/a9858770/.minikube/bin/docker-machine-driver-hyperkit 
-    $ sudo chmod u+s /Users/a9858770/.minikube/bin/docker-machine-driver-hyperkit 
+sudo chown root:wheel /Users/a9858770/.minikube/bin/docker-machine-driver-hyperkit
+sudo chmod u+s /Users/a9858770/.minikube/bin/docker-machine-driver-hyperkit
 
 minikube status
 
