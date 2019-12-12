@@ -44,3 +44,23 @@ cd service-catalog/simple-helloworld
 docker build . -t sosi/abc
 
 kubectl create deployment hello-node2 --image=sosi/abc
+
+kubectl get deployments
+
+kubectl config view
+(shows a yaml-like output)
+
+kubectl expose deployment hello-node2 --type=LoadBalancer --port=8080
+
+kubectl get services
+
+minikube service hello-node2
+
+
+> minikube service hello-node2
+> |-----------|-------------|-------------|-----------------------------|
+> | NAMESPACE |    NAME     | TARGET PORT |             URL             |
+> |-----------|-------------|-------------|-----------------------------|
+> | default   | hello-node2 |             | http://192.168.99.100:31936 |
+> |-----------|-------------|-------------|-----------------------------|
+> 🎉  Opening service default/hello-node2 in default browser...
