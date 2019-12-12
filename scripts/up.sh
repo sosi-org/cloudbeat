@@ -1,6 +1,6 @@
 set -e
-mkdir -p temp
-# rm ./temp/*
+mkdir -p state-temp
+# rm ./state-temp/*
 
 assert4()
 {
@@ -23,8 +23,8 @@ minikube start --vm-driver=virtualbox
 
 minikube status
 
-minikube status|grep -ie "Running\|Configured"|wc -l >temp/temp1.tmp
-cat temp/temp1.tmp | assert4
+minikube status|grep -ie "Running\|Configured"|wc -l >state-temp/temp1.tmp
+cat state-temp/temp1.tmp | assert4
 minikube stop
 
 # kubectl is now configured to use "minikube"
