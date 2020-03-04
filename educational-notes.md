@@ -68,3 +68,16 @@ minikube service hello-node2
 
 kubectl delete service hello-node
 kubectl delete deployment hello-node
+
+
+
+
+# Switching to kind: k-in-d
+Because it is better for linux, it can also be used on Mac too. Can do multi-node cluster.
+
+Installation:
+https://kind.sigs.k8s.io/docs/user/quick-start
+
+Decision based on
+https://www.reddit.com/r/kubernetes/comments/be0415/k3s_minikube_or_microk8s/
+
